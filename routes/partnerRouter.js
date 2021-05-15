@@ -36,7 +36,7 @@ partnerRouter
   })
   .post((req, res) => {
     res.end(
-      `Will add partner id ${req.params.partnerId}, ${req.body.name} with description ${req.body.description}`
+      `Will add partner.. id: ${req.params.partnerId}, name: ${req.body.name}, description: ${req.body.description}`
     );
   })
   .put((req, res) => {

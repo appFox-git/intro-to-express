@@ -36,7 +36,7 @@ promotionRouter
   })
   .post((req, res) => {
     res.end(
-      `Will add the promotion: ${req.body.name} with description: ${req.body.description}`
+      `Will add promotion.. id: ${req.params.promotionId}, name: ${req.body.name}, description: ${req.body.description}`
     );
   })
   .put((req, res) => {

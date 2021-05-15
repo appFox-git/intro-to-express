@@ -36,7 +36,7 @@ campsiteRouter
   })
   .post((req, res) => {
     res.end(
-      `Will add the campsite: ${req.body.name} with description: ${req.body.description}`
+      `Will add campsite.. id: ${req.params.campsiteId}, name: ${req.body.name}, description: ${req.body.description}`
     );
   })
   .put((req, res) => {
